@@ -26,3 +26,12 @@ This is my faithful NodeMCU ESP8266 recreation of the "Long Distance Friendship 
 Based off of the project here: https://www.uncommongoods.com/product/long-distance-friendship-lamp
 
 Wifi is configured via the ESP8266WiFi library: https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
+
+
+## Notes:
+
+- There is a total maximum of 5 combinations of lamp colors due to this being RGB LED based. I hopefully soon will implement a version of this to support Adafruit NEO Pixels and support things like color patterns for each lamp
+
+- Each lamp will need to be configured individually as MQTT Users setup in your MQTT settings.  The MQTT Patterns were set up as read/write access to two Patterns named "online" and "colorChange", which you will need to setup on your MQTT server.
+
+- Future enhacements include Piezo buzzer tone support, Adafruit Neo Pixel support and implementation of a 1'' OLED ICU display to show custom graphics and other things like the weather.
