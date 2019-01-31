@@ -17,11 +17,11 @@ This is my faithful NodeMCU ESP8266 recreation of the "Long Distance Friendship 
 
 6. Some basic USB power bricks (however many lamps you are going to set up): https://amzn.to/2Sl5icA
 
-7. An enclosure for the unit after you fully assemble it.  I 3D Printed a shell design which can be found on thingiverse (). I designed a custom base that fit the bottom of that design for the NodeMCU V3 unit and enclosed the entire thing nice and neatly.
+7. An enclosure for the unit after you fully assemble it.  I 3D Printed a shell design which can be found on thingiverse: https://www.thingiverse.com/thing:29876. I designed a custom base that fit the bottom of this design for the NodeMCU V3 unit and enclosed the entire thing nice and neatly.
 
 ![Design of custom NodeMCU V3 Base for the 3D Printed enclosure](https://i.imgur.com/BZfPDIP.png)
 
-**NOTE** I do make these for people. If you would like me to make these for you (with your own custom design of lamp / enclosure for the unit and RGB light), please reach out to me at brian@wearerev.com.
+**NOTE** I do make and sell these. If you would like me to make these for you (with your own custom design of lamp / enclosure for the unit and RGB light), please reach out to me at webdevbrian@gmail.com.
 
 Based off of the project here: https://www.uncommongoods.com/product/long-distance-friendship-lamp
 
