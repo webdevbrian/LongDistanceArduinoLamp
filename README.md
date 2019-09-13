@@ -27,7 +27,6 @@ Based off of the project here: https://www.uncommongoods.com/product/long-distan
 
 Wifi is configured via the ESP8266WiFi library: https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi
 
-
 ## Notes:
 
 - There is a total maximum of 5 combinations of lamp colors due to this being RGB LED based. I hopefully soon will implement a version of this to support Adafruit NEO Pixels and support things like color patterns for each lamp
