@@ -141,7 +141,7 @@ void setup() {
   pinMode(touch, INPUT);
   digitalWrite(led, 1);
 
-  // start ticker with 0.5 because we start in AP mode and try to connect
+  // Start ticker to check ever .7 of a second to check for wifi
   ticker.attach(0.7, tick);
 
   Serial.begin(9600);
@@ -151,12 +151,12 @@ void setup() {
   wifiManager.setAPCallback(configModeCallback);
   wifiManager.setConnectTimeout(20);
 
-  //Uncomment to reset any existing saved wifi settings
-  //wifiManager.resetSettings();
+  // ONLY Uncomment to reset any existing saved wifi settings
+  // remember to comment it back out and reupload to fully reset the nodeMCU
+  // wifiManager.resetSettings();
 
   wifiManager.autoConnect("Long Distance Lamp");
 
-  //if you get here you have connected to the WiFi
   Serial.println("Connected to wifi.");
 
   ticker.detach();
@@ -215,7 +215,7 @@ void setColor(int newColor[3]) {
     duty = lookup[i];
 
     for(int j = 0; j < fadeSpeed; j++) {
-      // one pulse of PWM
+      // One pulse of PWM
       digitalWrite(red, (int)currentColor[0]);
       digitalWrite(green, (int)currentColor[1]);
       digitalWrite(blue, (int)currentColor[2]);
