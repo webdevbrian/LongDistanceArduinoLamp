@@ -3,6 +3,9 @@
 # Long Distance Arduino Lamp
 This is my faithful NodeMCU ESP8266 recreation of the "Long Distance Friendship Lamp" product that extends on the project begun by Deepak Dhanavel Kumar Ravi Kumar. My version uses a physical button and implements easy wifi configuration via your smart phone with the ESP8266WiFi library, as well as other tweaks.
 
+## What these do
+Basically you have up to 5 units you hand out to your friends / family members. They configure it using the SSID that is initially broadcasted from the unit to use your home WiFi connection. From there it reaches a small MQTT messaging server to send a response and listen for events. When you hit your button, depending on what color you have configured for that unit, it will change all of the other units that color. Likewise, if they hit their button, it will change yours their color. The idea around this is for presence and feeling close to someone albeit they are far away. When you walk past your lamp, hitting your button signifies you're thinking of your family, and if they see their light change to your color, they will know they are by their lamp. "Thinking of us" or "Thinking of you" and "Miss you" are things my family have said while tapping their buttons. This act usually results in someone calling the other person to talk to them :)
+
 ## For this project you will need:
 
 1. A MQTT Server (like https://www.cloudmqtt.com/, which I used, and is free up to 5 nodes or "lamps")
